@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Paknathuch Wattanamongkolchoke - Resume</title>
+<style>
+  :root{
+    --fg:#0f172a; /* slate-900 */
+    --muted:#475569; /* slate-600 */
+    --accent:#0ea5e9; /* sky-500 */
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;color:var(--fg);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;}
+  .page{max-width:900px;margin:40px auto;padding:0 24px 64px;}
+  header{display:flex;flex-direction:column;gap:4px;margin-bottom:8px;}
+  h1{font-size:28px;letter-spacing:.2px;margin:0 0 6px 0;}
+  .contact{display:flex;flex-wrap:wrap;gap:8px;color:var(--muted);font-size:14px}
+  .contact a{color:var(--muted);text-decoration:none;border-bottom:1px dotted transparent}
+  .contact a:hover{color:var(--accent);border-color:var(--accent)}
+  section{margin-top:22px;}
+  h2{font-size:15px;letter-spacing:.8px;text-transform:uppercase;border-bottom:1px solid #e2e8f0;padding-bottom:6px;margin:0 0 10px 0}
+  ul{margin:8px 0 0 18px;padding:0}
+  li{margin:6px 0}
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .role{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;margin-top:12px;font-weight:600}
+  .role .where{font-weight:600}
+  .role .when{color:var(--muted);font-weight:500;white-space:nowrap}
+  .tech{color:var(--muted)}
+  @media (max-width:720px){ .two-col{grid-template-columns:1fr;} .role{flex-direction:column;align-items:flex-start} }
+  /* Print */
+  @media print{
+    body{color:#000}
+    a{text-decoration:none;color:#000}
+    .page{margin:0;max-width:100%;padding:0}
+    h1{font-size:22pt}
+    h2{font-size:11pt}
+    .contact{font-size:10pt}
+  }
+</style>
+</head>
+<body>
+<main class="page" role="main">
+  <header>
+    <h1>Paknathuch Wattanamongkolchoke</h1>
+    <div class="contact">
+      <span>Bangkok, Thailand</span>
+      <span>|</span>
+      <span>086-348-6591</span>
+      <span>|</span>
+      <a href="mailto:paknathuch@gmail.com">paknathuch@gmail.com</a>
+      <span>|</span>
+      <a href="https://linkedin.com/in/paknathuch" rel="noopener">linkedin.com/in/paknathuch</a>
+    </div>
+  </header>
+
+  <section aria-labelledby="summary">
+    <h2 id="summary">Summary</h2>
+    <p>Software Engineer with depth in backend and application security. Deliver services end-to-end (design -> code -> CI/CD -> ops) with measurable business impact: latency down, conversion up, cost reduced. Apply OWASP Top 10, threat modeling, and pen-testing (Kali/Burp) to build secure-by-default features with traceability and auditability. Experienced in improving both revenue capture and operational resilience, with focus on defending systems at scale.</p>
+  </section>
+
+  <section aria-labelledby="skills">
+    <h2 id="skills">Skills</h2>
+    <div class="two-col">
+      <ul>
+        <li><strong>Programming:</strong> Java (Spring Boot), JavaScript/TypeScript (Angular), SQL (PostgreSQL)</li>
+        <li><strong>Security:</strong> Application Security, OWASP Top 10, Threat Modeling, Pen-testing (Kali, Burp Suite)</li>
+        <li><strong>DevOps/Ops:</strong> Jenkins, Git, CI/CD, Linux ops, monitoring and incident basics</li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="certs">
+    <h2 id="certs">Certifications</h2>
+    <ul>
+      <li>VMware Certified Professional - Cloud Management and Automation (VCP-CMA) (2V0-72.22)</li>
+      <li>Spring Certified Professional 2023</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="exp">
+    <h2 id="exp">Experience</h2>
+
+    <div class="role">
+      <div class="where">Software Programmer - CPF Group | Bangkok</div>
+      <div class="when">Aug 2021 - Jun 2025</div>
+    </div>
+    <ul>
+      <li>Integrated sales-order intake with the Distribution Center -> dispatch lead time decreased by 22% and data-entry errors decreased by 35% (est.), accelerating order-to-cash. <span class="tech">[Spring Boot, PostgreSQL]</span></li>
+      <li>Shipped CRM lead-management features -> lead-to-customer conversion increased by +8.5 percentage points (pp) and sales cycle time decreased by 18% (est.). <span class="tech">[Angular, Java]</span></li>
+      <li>Built subscription/roles/usage-log/promo modules -> OPEX per order decreased by 12%; promo misuse decreased by 30% (est.); auditability improved. <span class="tech">[Spring Boot, PostgreSQL]</span></li>
+      <li>Prototyped Android POS (PoC) -> checkout time decreased by 41%; enabled field selling in 25+ pilot locations (est.). <span class="tech">[Android, Java]</span></li>
+    </ul>
+
+    <div class="role">
+      <div class="where">Java Developer - Thai Life Insurance PCL | Bangkok</div>
+      <div class="when">Jan 2021 - Jul 2021</div>
+    </div>
+    <ul>
+      <li>Enhanced cross-platform sales app (web + mobile) -> agent productivity increased by 18% (quotes/day) and time-to-quote reduced from 15 min to 9 min (est.). <span class="tech">[Spring Boot, Angular]</span></li>
+      <li>Optimized sales workflows/UX -> drop-offs decreased by 24%; application completion rate increased by +6.2pp (est.). <span class="tech">[Angular]</span></li>
+    </ul>
+
+    <div class="role">
+      <div class="where">Web Developer - Kratos Co., Ltd.</div>
+      <div class="when">Mar 2019 - Mar 2020</div>
+    </div>
+    <ul>
+      <li>Delivered HRM modules and claims channel -> manual HR processing time decreased by 25%; claim SLA reduced from 5 days to 3 days (est.). <span class="tech">[Java, SQL]</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="edu">
+    <h2 id="edu">Education</h2>
+    <ul>
+      <li>M.Sc., Software Engineering, Chulalongkorn University (2025 - 2027)</li>
+      <li>B.B.A., Huachiew Chalermprakiet University (2014 - 2018)</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="interests">
+    <h2 id="interests">Interests</h2>
+    <p>Secure software at scale | DevSecOps | Reverse Engineering | Application Security</p>
+  </section>
+</main>
+</body>
+</html>
